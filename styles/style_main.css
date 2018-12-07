@@ -1,0 +1,31 @@
+.about{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.about div {
+	flex: 270px;
+	margin: 20px;
+	align-self: center;
+}
+
+.about p{
+	text-align: justify;
+}
+
+.about img {
+	margin-left: 5%;
+}
+
+.social {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.social img {
+	width: 64px;
+	height: 64px;
+	padding: 5px;
+}

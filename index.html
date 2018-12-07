@@ -4,35 +4,115 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Sarthak Agrawal">
 		<meta name="description" content="Webpage of Sarthak Agrawal">
-		<!-- <link href="styles/style.css" rel="stylesheet"> -->
-		<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'> -->
-		<title>My Webpage</title>
+		<link href="styles/style.css" rel="stylesheet">
+		<link href="styles/style_main.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+		<title>Sarthak Agrawal homepage</title>
 	</head>
 	<body>
 		<header>
 			<nav>
 				<ul>
-					<li>Home</li>
+					<li class="current">Home</li>
 					<li><a href="projects.html">Projects</a></li>
+					<li><a href="games.html">Games</a></li>
+					<li><a href="philo.html">Philosohpy</a></li>
 				</ul>
 			</nav>
+			<h1>Welcome to Sarthak's homepage</h1>
 		</header>
 
 		<main>
-			<h1>Hello World</h1>
-			<img src="images/my-profile.JPG" alt="Image of Sarthak">
-			<p>I'm hosted with <abbr title="Platform for version control management">GitHub</abbr> Pages.</p>
-			<p>What I need to learn is to create a
-				<a href = "https://en.wikipedia.org/wiki/Web_page" 
-				title="Wiki entry on Webpage" target="_blank">webpage</a>
-			</p>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JS</li>
-				<li>and maybe more ...</li>
-			</ul>
+			<section class="about" title="About">
+				<div>
+					<h2>About Me</h2>
+					<p>I am Sarthak, a first year undergraduate pursuing my degree in <em>Computer Science and Engineering</em> from
+					<abbr title="Indian Institute of Technology">IIT</abbr>, Delhi. I am deeply passionate about programming and
+					it's diverse application in software and game development. I am also intrigued by increasing capability
+					of computers in every field imaginable.</p>
+				</div>
+				<img src="images/Sarthak-Agrawal.JPG" alt="Image of Sarthak" width=256px height=386px>
+			</section>
+
+			<section title="Interests and Hobbies">
+				<h2>Interests and Hobbies -</h2>
+				<ul>
+					<li>Programming, in general</li>
+					<li>Game development</li>
+					<li>Science, in general</li>
+					<li>Philosophy</li>
+					<li>Art and Graphic Designing</li>
+					<li>Sports - Football, Volleyball and Badminton</li>
+				</ul>
+
+			</section>	
+
+			<section title="Technical Qualifications">
+				<h2>Technical Qualifications -</h2>
+				<ul>
+					<li>
+						<p>Languages - </p>
+						<ul>
+							<li>
+								<p>Programming Languages - </p>
+								<ol>	
+									<li><strong>JAVA</strong> (Intermediate)</li>
+									<li><strong>C++</strong> (Average)</li>
+									<li><strong>Python</strong> (Familiar)</li>
+									<li><strong>C#</strong> (Used only in context of Unity)</li>
+								</ol>	
+							</li>	
+							<li>
+								<p>Other -</p>
+								<ol>
+									<li><strong>HTML</strong> (Intermediate)</li>
+									<li><strong>CSS</strong> (Average)</li>
+									<li><strong>AHK</strong> (Familiar)</li>
+								</ol>
+							</li>
+						</ul>
+					</li>
+					<li>Familiar with<a href="https://www.gimp.org/" class="link" target="_blank"> GIMP</a>,
+						<a href="https://inkscape.org/" class="link" target="_blank">Inkscape</a>,
+						<a href="https://photoshop.com" class="link" target="_blank">Photoshop</a></li>
+					<li>Can use <a href="https://www.vim.org" class="link" target="_blank">VIM</a> - 
+						The Ubiquitous Text Editor, actually it's my fav. (haha)</li>
+				</ul>
+
+			</section>	
+			<section title="Developments">
+				<h2>What I developed?</h2>
+				<ul>
+					<li>
+						<h3><a href="projects.html" class="link">Projects</a></h3>
+						<p>As a programmer I do have developed some of my own applications. Though, most of them
+						were developed with only personal use in mind, some of my applications do have great use. You
+						can view all my such projects by visiting Projects page.</p>
+					</li>
+					<li>
+						<h3><a href="games.html" class="link">Games</a></h3>
+						<p>I always had a deep interest in game development. So I started game development very early.
+						Some of my games can be viewed by visiting Games page.</p>
+					</li>
+					<li>
+						<h3><a href="philo.html" class="link">Philosophy</a></h3>
+						<p>I, very occasionally, write some of my philosophies on my blog. You can view all of them by
+						visiting Philosophy page.</p>
+					</li>
+				</ul>
+			</section>
+			<section title="Contact">
+				<h2>Feel free to drop me an email any time -</h2>
+				<p><strong>Email</strong>: sarthakagrawal8@gmail.com</p>
+				<div class="social">
+					<a href="https://www.facebook.com/sarthak.agrawal.08"><img src="images/fbicon.svg"  alt="Find me on FB"></a>
+					<a href="mailto:sarthakagrawal8@gmail.com"><img src="images/gmailicon.svg" alt="Email me!"></a>
+				</div>
+			</section>
 		</main>
+		<footer>
+			<p>This website was coded from scratch by Sarthak as a part of DevClub assignment.</p>
+		</footer>
 	</body>
 </html>
 
