@@ -1,0 +1,34 @@
+header {
+	border-bottom: 1em solid #00a896;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	/*overwrite some padding settings to suit sidebar */
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+main .sidebar {
+	padding: 10px 20px 0px 10px;
+	/* margin-top: 2em; */
+	flex: 0.1 100px;
+	background: linear-gradient(to bottom, #05648a, #033a51);
+}
+
+main .sidebar ul{
+	list-style-type: none;
+}
+
+main .sidebar ul li::before{
+	content: "\2192 ";
+	color: #00a896;
+}
+
+main article {
+	flex: 1 500px;
+	margin-left: 20px;
+}

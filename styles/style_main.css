@@ -1,3 +1,4 @@
+/* about section uses flexbox to display text and image side by side with responsiveness */
 .about{
 	display: flex;
 	flex-flow: row wrap;
@@ -18,12 +19,14 @@
 	margin-left: 5%;
 }
 
+/*social section also uses flex-box to display icons in row manner */
 .social {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
+/* img is of SVG type so set custom height and width */
 .social img {
 	width: 64px;
 	height: 64px;

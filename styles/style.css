@@ -1,34 +1,48 @@
 html {
+	/* set margin and padding to zero for seamless background */
 	margin: 0px;
 	padding: 0px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px;
-    padding: 0px;
+	/*using google fonts, again margin and padding zero for seamless bg */
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 
+/*add gradient to all - header, main and footer */
 main {
 	background: linear-gradient(to bottom, #c9cc9f 0%,#f0f3bd 20%,#f0f3bd 80%,#c9cc9f 100%);
 	padding: 20px 10% 20px 10%;
 }
 
-p, li {
-	color: #05668d;
-	font-size: 1 em;
+header, footer {
+	background: linear-gradient(to bottom, #03374c 0%,#044a66 25%,#05668d 100%);
 }
 
-h1 {
+p, li {
+	color: #05668d;
+}
+
+header h1 {
 	text-align: center;
 	margin: 0px;
 	padding: 20px 0px 20px 0px;
 	color: #f0f3bd; 
 }
+
+h1 {
+	text-align: center;
+	margin: 10px;
+	color: #05668d;
+}
+
 h2 {
 	color: #05668d;
 }
 
+/* links will display highlighted when hovered or activated*/
 .link {
 	color: #00a896;
 }
@@ -38,14 +52,11 @@ h2 {
 	text-decoration: none;
 }
 
-header, footer {
-	background: linear-gradient(to bottom, #03374c 0%,#044a66 25%,#05668d 100%);
-}
-
 header nav {
 	padding: 5px 0px 10px 0px;
 }
 
+/*navbar uses flexbox to keep menu items in one row and centers them */
 header nav ul {
 	display: flex;
 	justify-content: center;
@@ -55,6 +66,7 @@ header nav ul {
 }
 
 header nav ul li a, .current{
+	/*display set to inline-block to allow for resizing and padding */
 	display: inline-block;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -66,20 +78,18 @@ header nav ul li a, .current{
 	background-color: #f0f3bd;
 }
 
+/*box-shadow effect is used to create button press effect on menu items*/
 header nav ul li a {
 	box-shadow: 2px 2px 0px #7e7f63;
 }
-
 header nav ul li a:hover{
 	background-color: #a3a581;
 	box-shadow: inset 2px 2px 0px #7e7f63;
 }
-
 header nav ul .current {
 	background-color: #a3a581;
 	box-shadow: inset 2px 2px 0px #7e7f63;
 }
-
 header nav ul .current:hover {
 	box-shadow: inset 3px 3px 0px #7e7f63;
 }
