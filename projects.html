@@ -25,27 +25,107 @@
 		<main>
 			<nav class="sidebar">
 				<ul>
-					<li><a href="#" class="link">Recents</a></li>
-					<li><a href="#" class="link">All</a></li>
+					<li><a href="#recents" class="link">Recents</a></li>
+					<li>All Projects
+						<ul>
+							<li><a href="#SEncrypt" class="link">SEncrypt</a></li>
+							<li><a href="#rainsim" class="link">Rainfall Physics</a></li>
+							<li><a href="#SText" class="link">SText Editor</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 			<article title="projects">
-				<section title="recent projects">
+				<section title="recent projects" id="recents">
 					<h1>Recent Projects ...</h1>
-					<div>
-						<h2>Project Heading</h2>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
-						<p>Project Description</p>
+					<div title="SEncrypt" id="SEncrypt">
+						<h2>SEncrypt - The Text Encryptor</h2>
+						<p>Coded in C++, SEncrypt is a text 
+						<a href="https://en.wikipedia.org/wiki/Encryption" class="link">encryption</a>
+						program. It can be used to encrypt and decrypt text into ciphers to prevent their misuse.</p>
+						<p>SEncrypt encrypts text by creating a ASCII character bijective map whose mapping is random
+						and seeded by a <em>key</em> entered by user. The text message is then encrypted or decrypted
+						using this map.</p>
+						<p>The only <em>feasible</em> way to crack the encryption is to recreate the mapping, which because
+						of it's very randomness can only be obtained by obtaining the <em>key</em> of encryption.</p>
+						<p>Example -</p>
+						<div class="flexed">
+							<code>$ ./sencrypt.exe <br>
+								Enter a key : mykey <br>
+								Your msg : hello world <br>
+								Encrypted Output : kBcc&nC&Qc1 <br>
+								Decrypted Output : ?1]]{gQ{B]N <br>
+							</code>
+							
+							<code>
+								$ ./sencrypt.exe <br>
+								Enter a key : mykey <br>
+								Your msg : kBcc&nC&Qc1 <br>
+								Encrypted Output : Wr77.Zt.w7e <br>
+								Decrypted Output : hello world <br>
+							</code>					
+						</div>
+						<p>The program can also be used to read/write encryptions/decryptions to a text file instead.</p>
+						<p>General syntax - </p>
+						<code>$ [e or d] [key] [inputfile] <[outputfile]></code>
+						<p>Example - </p>
+						<div class="flexed">
+							<code>$ ./sencrypt.exe e somekey input.txt out.txt</code>
+							<code>$ ./sencrypt.exe d somekey output.txt <br>
+								1 <br>
+								This is some message that is written in input.txt <br>
+							</code>
+						</div>
+						<a href="https://drive.google.com/file/d/17iKuu_tYL7en_uZfwYGdCDcWGbI0gUZ3/view?usp=sharing"
+						   alt="Download .zip from GDrive" class="link">Download .zip</a>
+					</div>
+				</section>
+				<hr>
+				<section title="All Projects" id="all-projects">
+					<h1>All Projects</h1>
+					<div title="SEncrypt">
+						<h2><a href="#SEncrypt" class="link">SEncrypt - The Text Encryptor</a></h2>
+					</div>
+					<div title="Rainfaill Simulator" id="rainsim">
+						<h2>Rainfall Physics Simulator</h2>
+						<p>This project attempts to simulate rainfall and physics of water-flow.</p>
+						<p>Purpose of this project was to learn dynamic GUI updating in <strong>JavaFX</strong>
+					       	using concept of FPS and to get hands-on experience on a simple physics simulator,
+					       	both of which have been duly accomplished. Side objectives included learning event-handling,
+					       	logic for creation of smoothed landscapes (like those created in games like Minecraft)
+					       	and JavaFX Animations. <strong>All checked</strong>.</p>
+						<p>This project, strictly speaking,  is not a true physics simulator - </p>
+						<ul>
+							<li>There is no concept of <em>velocity</em>. Raindrops are coded such that they move,
+							       	if they can, <em>exactly</em> 1 pixel each frame.</li>
+							<li>There is gravity but there is <strong>no</strong> concept of acceleration due to gravity.
+							       	This is implicitly stated in previous statement.</li>
+							<li>There is <strong>no</strong> collision mechanics involved.
+							    Raindrops magically stick to the surface on collision (e=0) but when the collide with land
+							    laterally they sometimes do, and sometimes do not, bounce back elastically (e=1).</li>
+							<li>There is also no concept of <em>potential difference</em>. That is,
+							       	if you were to create 2 connected vessels and fill one of them with water,
+							       	the water would definitely flow to the other but it is not guaranteed that it would 
+								attain same level in both.</li>
+							<p>Demo - </p>
+							<iframe src='https://gfycat.com/ifr/EnviousDishonestGemsbuck' autoplay='false'
+							       	frameborder='0' scrolling='no' allowfullscreen width='320' height='337'></iframe>
+						</ul>
+						<a href="https://drive.google.com/open?id=1VKjSpmh-gtr9rRbALP6CBmbHyTPh5OsR"
+						   alt="Download .JAR from GDrive" class="link">Download .JAR</a>
+					</div>
+					<div title="SText Editor" id="SText">
+						<h2>SText Editor</h2>
+						<p>A simple text editor powered by Java(fx). Has the capability of a standard notepad
+					       	plus it can mask/unmask text data.</p>
+						<a href="https://drive.google.com/open?id=11MCWVU8BC9Kso0KAZjI4-Fr03YI1Hmuc"
+						   alt="Download .JAR from GDrive" class="link">Download. JAR</a>
 					</div>
 				</section>
 			</article>
 		</main>
+		<footer>
+			<p>Projects by Sarthak</p>
+		</footer>
 	</body>
 </html>

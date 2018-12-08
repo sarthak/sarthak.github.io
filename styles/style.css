@@ -52,6 +52,36 @@ h2 {
 	text-decoration: none;
 }
 
+.flexed {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+code {
+	background-color: black;
+	color: lime;
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid lime;
+	border-radius: 5px;
+
+}	
+
+button {
+	display: block;
+	border: 1px solid #01241c;
+	border-radius: 5px;
+	color: #01241c;
+	padding: 5px;
+	margin: 5px auto;
+	text-align: center;
+
+	background-color: #02c39a;
+	box-shadow: 2px 2px 0px #026b54;
+}
+
+
 header nav {
 	padding: 5px 0px 10px 0px;
 }

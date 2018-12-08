@@ -13,10 +13,16 @@ main {
 }
 
 main .sidebar {
-	padding: 10px 20px 0px 10px;
-	/* margin-top: 2em; */
-	flex: 0.1 100px;
-	background: linear-gradient(to bottom, #05648a, #033a51);
+	padding: 10px 20px 0px 0px;
+	margin: 20px;
+	flex: 0.2 150px;
+	background-color: #f0f3bd;
+	border: 2px solid #7e7f63;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0px #7e7f63;
+
+	align-self: flex-start;
+
 }
 
 main .sidebar ul{
@@ -31,4 +37,14 @@ main .sidebar ul li::before{
 main article {
 	flex: 1 500px;
 	margin-left: 20px;
+}
+
+main h1 {
+	font-size: 2em;
+	margin-top: 20px;
+}
+
+iframe {
+	display: block;
+	margin: 10px auto;
 }
