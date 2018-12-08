@@ -2,6 +2,7 @@ html {
 	/* set margin and padding to zero for seamless background */
 	margin: 0px;
 	padding: 0px;
+	height: 100%;
 }
 
 body {
