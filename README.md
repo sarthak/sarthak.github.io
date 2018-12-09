@@ -1,4 +1,4 @@
 # batman831.github.io
-Personal Webpage
+Personal Webpage.
 
-**Currently under construction**
+Contains small bio, all my public projects and games and also some of my philosophy :)
