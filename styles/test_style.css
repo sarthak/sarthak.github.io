@@ -1,4 +1,4 @@
-@media screen and (max-resolution: 100dpi) {
+@media screen and (min-resolution: 0dpi) {
 	html {
 		font-size: 20px;
 		color: red;
@@ -9,6 +9,13 @@
 	html {
 		font-size: 40px;
 		color: blue;
+	}
+}
+
+@media screen and (min-resolution: 200dpi) {
+	html {
+		font-size: 80px;
+		color: yellow;
 	}
 }
 
