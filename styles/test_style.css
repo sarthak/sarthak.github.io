@@ -1,3 +1,15 @@
+@media screen and (max-resolution: 100dpi) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-resolution: 100dpi) {
+	html {
+		font-size: 40px;
+	}
+}
+
 h1 {
 	font-size: 3em;
 }
