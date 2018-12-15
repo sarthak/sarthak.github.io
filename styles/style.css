@@ -93,6 +93,7 @@ header nav ul {
 	display: flex;
 	justify-content: center;
 	list-style-type: none;
+	flex-flow: row wrap;
 
 	margin: 0px;
 }
