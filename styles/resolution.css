@@ -1,0 +1,15 @@
+@media screen and (max-resolution:100dpi) {
+	html{ font-size: 16px; }
+}
+
+@media screen and (max-resolution:200dpi) {
+	html{ font-size: 32px; }
+}
+
+@media screen and (max-resolution:400dpi) {
+	html{ font-size: 64px; }
+}
+
+@media screen and (max-resolution:800dpi) {
+	html{ font-size: 128px; }
+}
