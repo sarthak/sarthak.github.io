@@ -2,3 +2,10 @@
 	width: 16em;
 	height: 24.125em
 }
+
+/* img is of SVG type so set custom height and width */
+.social img {
+	width: 4em;
+	height: 4em;
+	padding: 5px;
+}

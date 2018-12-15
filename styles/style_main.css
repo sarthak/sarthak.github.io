@@ -6,7 +6,7 @@
 }
 
 .about div {
-	flex: 270px;
+	flex: 16.875em;
 	margin: 20px;
 	align-self: center;
 }
@@ -26,9 +26,3 @@
 	justify-content: center;
 }
 
-/* img is of SVG type so set custom height and width */
-.social img {
-	width: 64px;
-	height: 64px;
-	padding: 5px;
-}
