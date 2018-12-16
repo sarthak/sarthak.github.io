@@ -6,8 +6,16 @@
 	html{ font-size: 32px; }
 }
 
+@media screen and (min-resolution:300dpi) {
+	html{ font-size: 48px; }
+}
+
 @media screen and (min-resolution:400dpi) {
 	html{ font-size: 64px; }
+}
+
+@media screen and (min-resolution:600dpi) {
+	html{ font-size: 96px; }
 }
 
 @media screen and (min-resolution:800dpi) {
