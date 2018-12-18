@@ -36,7 +36,6 @@ main .sidebar ul li::before{
 
 main article {
 	flex: 30em;
-	margin-left: 20px;
 }
 
 main h1 {
