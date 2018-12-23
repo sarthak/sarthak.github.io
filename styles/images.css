@@ -17,3 +17,10 @@
 #bb-game {
 	width: 18.75em;
 }
+
+#navimage {
+	width: 18.875em;
+	height: 20.5em;
+	display: block;
+	margin: 5px auto;
+}

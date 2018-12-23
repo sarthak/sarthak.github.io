@@ -6,6 +6,7 @@
 		<meta name="description" content="Projects of Sarthak" />
 		<link href="styles/style.css" rel="stylesheet">
 		<link href="styles/style_project.css" rel="stylesheet">
+		<link href="styles/images.css" rel="stylesheet">
 		<link href="styles/resolution.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 		<title>Projects</title>
@@ -29,6 +30,7 @@
 					<li><a href="#recents" class="link">Recents</a></li>
 					<li>All Projects
 						<ul>
+							<li><a href="#NavImage" class="link">NavImage</a></li>
 							<li><a href="#SEncrypt" class="link">SEncrypt</a></li>
 							<li><a href="#rainsim" class="link">Rainfall Physics</a></li>
 							<li><a href="#SText" class="link">SText Editor</a></li>
@@ -39,6 +41,30 @@
 			<article title="projects">
 				<section title="recent projects" id="recents">
 					<h1>Recent Projects ...</h1>
+					<section title="NavImage" id="NavImage" class="post">
+						<h2>NavImage - Replicate directory's naviagtion hierarchy</h2>
+						<p>
+						Tool to create image of directory's navigation structure<br><br>
+
+						Creating an image of HDD is useful, but sometimes you don't want to bother with copying your entire HDD
+						but rather only preserve it's navigation structure. This tool allows you to do exactly that. <br><br>
+						It replicates the directory structure of a source directory in the same hierarchical manner as the source.
+						The only difference is that it does not copy files and their contents.
+						Instead it associates each directory with a index.html file containing information about it's files 
+						and also linking to relevant directories. <br><br>
+
+						<strong>TL;DR</strong> It replicates entire directory structure in folder only manner 
+						and associates each folder with it's index.html file containing list of files originally contained in directory.<br>
+						<br>
+
+						Info about usage and specifications on GitHub.
+						</p>
+
+						<img src="images/projects/navimage.PNG" alt="Example" id="navimage">
+						<a href="https://github.com/batman831/NavImage" class="link" target="_blank" alt="View NavImage on Github">
+							View this project on GitHub (Also download as .JAR)
+						</a>
+					</section>
 					<section title="SEncrypt" id="SEncrypt" class="post">
 						<h2>SEncrypt - The Text Encryptor</h2>
 						<p>Coded in C++, SEncrypt is a text 
@@ -83,7 +109,9 @@
 				</section>
 				<section title="All Projects" id="all-projects">
 					<h1>All Projects</h1>
-					<section title="SEncrypt" class="post">
+					<section title="NavImage" class="post">
+						<h2><a href="#NavImage" class="link">NavImage - Replicate Directory Structure</a></h2>
+					</section><section title="SEncrypt" class="post">
 						<h2><a href="#SEncrypt" class="link">SEncrypt - The Text Encryptor</a></h2>
 					</section>
 					<section title="Rainfaill Simulator" id="rainsim" class="post">
