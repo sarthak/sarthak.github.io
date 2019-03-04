@@ -5,6 +5,11 @@ html {
 	height: 100%;
 }
 
+html * {
+	/*One of a kind bug fix. Prevents font boosting on chrome android.*/
+	max-height: 9999999px;
+}
+
 body {
 	/*using google fonts, again margin and padding zero for seamless bg */
 	font-family: 'Open Sans', sans-serif;
