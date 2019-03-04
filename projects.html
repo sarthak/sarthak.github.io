@@ -25,51 +25,38 @@
 		</header>
 
 		<main>
-			<nav class="sidebar">
-				<ul>
-					<li><a href="#recents" class="link">Recents</a></li>
-					<li>All Projects
-						<ul>
-							<li><a href="#NavImage" class="link">NavImage</a></li>
-							<li><a href="#SEncrypt" class="link">SEncrypt</a></li>
-							<li><a href="#rainsim" class="link">Rainfall Physics</a></li>
-							<li><a href="#SText" class="link">SText Editor</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<article title="projects">
-				<section title="recent projects" id="recents">
-					<h1>Recent Projects ...</h1>
-					<section title="NavImage" id="NavImage" class="post">
-						<h2>NavImage - Replicate directory's naviagtion hierarchy</h2>
-						<p>
-						Tool to create image of directory's navigation structure<br><br>
+			<article title="Projects">
+				<section title="NavImage" id="NavImage" class="post">
+					<h2>NavImage - Replicate directory's naviagtion hierarchy</h2>
+					<p>Tool to create image of directory's navigation structure </p>
+					<div class="main-content">
+					<p>
+					Creating an image of HDD is useful, but sometimes you don't want to bother with copying your entire HDD
+					but rather only preserve it's navigation structure. This tool allows you to do exactly that. <br><br>
+					It replicates the directory structure of a source directory in the same hierarchical manner as the source.
+					The only difference is that it does not copy files and their contents.
+					Instead it associates each directory with a index.html file containing information about it's files 
+					and also linking to relevant directories. <br><br>
 
-						Creating an image of HDD is useful, but sometimes you don't want to bother with copying your entire HDD
-						but rather only preserve it's navigation structure. This tool allows you to do exactly that. <br><br>
-						It replicates the directory structure of a source directory in the same hierarchical manner as the source.
-						The only difference is that it does not copy files and their contents.
-						Instead it associates each directory with a index.html file containing information about it's files 
-						and also linking to relevant directories. <br><br>
+					<strong>TL;DR</strong> It replicates entire directory structure in folder only manner 
+					and associates each folder with it's index.html file containing list of files originally contained in directory.<br>
+					<br>
 
-						<strong>TL;DR</strong> It replicates entire directory structure in folder only manner 
-						and associates each folder with it's index.html file containing list of files originally contained in directory.<br>
-						<br>
+					Info about usage and specifications on GitHub.
+					</p>
 
-						Info about usage and specifications on GitHub.
-						</p>
-
-						<img src="images/projects/navimage.PNG" alt="Example" id="navimage">
-						<a href="https://github.com/batman831/NavImage" class="link" target="_blank" alt="View NavImage on Github">
-							View this project on GitHub (Also download as .JAR)
-						</a>
-					</section>
-					<section title="SEncrypt" id="SEncrypt" class="post">
-						<h2>SEncrypt - The Text Encryptor</h2>
-						<p>Coded in C++, SEncrypt is a text 
-						<a href="https://en.wikipedia.org/wiki/Encryption" class="link" target="_blank">encryption</a>
-						program. It can be used to encrypt and decrypt text into ciphers to prevent their misuse.</p>
+					<img src="images/projects/navimage.PNG" alt="Example" id="navimage">
+					<a href="https://github.com/batman831/NavImage" class="link" target="_blank" alt="View NavImage on Github">
+						View this project on GitHub (Also download as .JAR)
+					</a>
+					</div>
+				</section>
+				<section title="SEncrypt" id="SEncrypt" class="post">
+					<h2>SEncrypt - The Text Encryptor</h2>
+					<p>Coded in C++, SEncrypt is a text 
+					<a href="https://en.wikipedia.org/wiki/Encryption" class="link" target="_blank">encryption</a>
+					program. It can be used to encrypt and decrypt text into ciphers to prevent their misuse.</p>
+					<div class="main-content">
 						<p>SEncrypt encrypts text by creating a ASCII character bijective map whose mapping is random
 						and seeded by a <em>key</em> entered by user. The text message is then encrypted or decrypted
 						using this map.</p>
@@ -83,7 +70,7 @@
 								Encrypted Output : kBcc&nC&Qc1 <br>
 								Decrypted Output : ?1]]{gQ{B]N <br>
 							</code>
-							
+
 							<code>
 								$ ./sencrypt.exe <br>
 								Enter a key : mykey <br>
@@ -105,54 +92,53 @@
 						</div>
 						<a href="https://drive.google.com/file/d/17iKuu_tYL7en_uZfwYGdCDcWGbI0gUZ3/view?usp=sharing"
 						   alt="Download .zip from GDrive" class="link">Download .zip</a>
-					</section>
+					</div>
 				</section>
-				<section title="All Projects" id="all-projects">
-					<h1>All Projects</h1>
-					<section title="NavImage" class="post">
-						<h2><a href="#NavImage" class="link">NavImage - Replicate Directory Structure</a></h2>
-					</section><section title="SEncrypt" class="post">
-						<h2><a href="#SEncrypt" class="link">SEncrypt - The Text Encryptor</a></h2>
-					</section>
-					<section title="Rainfaill Simulator" id="rainsim" class="post">
-						<h2>Rainfall Physics Simulator</h2>
-						<p>This project attempts to simulate rainfall and physics of water-flow.</p>
+				<section title="Rainfaill Simulator" id="rainsim" class="post">
+					<h2>Rainfall Physics Simulator</h2>
+					<p>This project attempts to simulate rainfall and physics of water-flow.</p>
+					<div class="main-content">
 						<p>Purpose of this project was to learn dynamic GUI updating in <strong>JavaFX</strong>
-					       	using concept of FPS and to get hands-on experience on a simple physics simulator,
-					       	both of which have been duly accomplished. Side objectives included learning event-handling,
-					       	logic for creation of smoothed landscapes (like those created in games like Minecraft)
-					       	and JavaFX Animations. <strong>All checked</strong>.</p>
+						using concept of FPS and to get hands-on experience on a simple physics simulator,
+						both of which have been duly accomplished. Side objectives included learning event-handling,
+						logic for creation of smoothed landscapes (like those created in games like Minecraft)
+						and JavaFX Animations. <strong>All checked</strong>.</p>
 						<p>This project, strictly speaking,  is not a true physics simulator - </p>
 						<ul>
 							<li>There is no concept of <em>velocity</em>. Raindrops are coded such that they move,
-							       	if they can, <em>exactly</em> 1 pixel each frame.</li>
+								if they can, <em>exactly</em> 1 pixel each frame.</li>
 							<li>There is gravity but there is <strong>no</strong> concept of acceleration due to gravity.
-							       	This is implicitly stated in previous statement.</li>
+								This is implicitly stated in previous statement.</li>
 							<li>There is <strong>no</strong> collision mechanics involved.
-							    Raindrops magically stick to the surface on collision (e=0) but when the collide with land
-							    laterally they sometimes do, and sometimes do not, bounce back elastically (e=1).</li>
+								Raindrops magically stick to the surface on collision (e=0) but when the collide with land
+								laterally they sometimes do, and sometimes do not, bounce back elastically (e=1).</li>
 							<li>There is also no concept of <em>potential difference</em>. That is,
-							       	if you were to create 2 connected vessels and fill one of them with water,
-							       	the water would definitely flow to the other but it is not guaranteed that it would 
+								if you were to create 2 connected vessels and fill one of them with water,
+								the water would definitely flow to the other but it is not guaranteed that it would 
 								attain same level in both.</li>
 						</ul>
 						<p><a href="https://gfycat.com/enviousdishonestgemsbuck" class="link" target="_blank">
-						View a GIF of this simulator</a></p>
+							View a GIF of this simulator</a></p>
 						<a href="https://drive.google.com/open?id=1VKjSpmh-gtr9rRbALP6CBmbHyTPh5OsR"
 						   alt="Download .JAR from GDrive" class="link" target="_blank">Download .JAR</a>
-					</section>
-					<section title="SText Editor" id="SText" class="post">
-						<h2>SText Editor</h2>
-						<p>A simple text editor powered by Java(fx). Has the capability of a standard notepad
-					       	plus it can mask/unmask text data.</p>
+					</div>
+				</section>
+				<section title="SText Editor" id="SText" class="post">
+					<h2>SText Editor</h2>
+					<p>A simple text editor powered by Java(fx).</p>
+					<div class="main-content">
+						<p>
+						Has the capability of a standard notepad
+						plus it can mask/unmask text data.</p>
 						<a href="https://drive.google.com/open?id=11MCWVU8BC9Kso0KAZjI4-Fr03YI1Hmuc"
 						   alt="Download .JAR from GDrive" class="link" target="_blank">Download. JAR</a>
-					</section>
+					</div>
 				</section>
 			</article>
 		</main>
 		<footer>
 			<p>Projects by Sarthak</p>
 		</footer>
+		<script src="scripts/posts.js"></script>
 	</body>
 </html>

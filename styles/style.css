@@ -69,18 +69,7 @@ code {
 
 }	
 
-button {
-	display: block;
-	border: 0.1em solid #01241c;
-	border-radius: 0.3em;
-	color: #01241c;
-	padding: 0.3em;
-	margin: 0.3em auto;
-	text-align: center;
 
-	background-color: #02c39a;
-	box-shadow: 0.2em 0.2em 0 #026b54;
-}
 
 
 header nav {
@@ -135,14 +124,25 @@ footer p {
 
 /* styling for projects, games and philosophy page "Post" below */
 .post {
-	margin: 1em 5% 1em 5%;
+	margin: 0 5% 0 5%;
 	padding: 1em;
-	border: 1px solid #424334;
-	border-radius: 1em;
-	box-shadow: 0px 0px 1em #424334;
-	background-color: #f0f3bd;
 }
 
-.post:hover {
-	box-shadow: 0px 0px 10px #424334 inset;
+button {
+	border: 0.1em solid black;
+	border-radius: 0.3em;
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	background-color: #f0f3bd;
+
+	box-shadow: 0.2em 0.2em 0 #7e7f63;
 }
+
+button:hover {
+	box-shadow: inset 0.2em 0.2em 0 #7e7f63;
+}
+
+
+

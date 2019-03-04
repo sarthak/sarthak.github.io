@@ -3,42 +3,5 @@ header {
 }
 
 main {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-
-	/*overwrite some padding settings to suit sidebar */
-	padding-left: 0px;
 	padding-top: 0px;
-}
-
-main .sidebar {
-	padding: 1em 1em 0 0;
-	margin: 1em;
-	flex: 0.2 10em;
-	background-color: #f0f3bd;
-	border: 2px solid #7e7f63;
-	border-radius: 0.3em;
-	box-shadow: 0.2em 0.2em 0 #7e7f63;
-
-	align-self: flex-start;
-
-}
-
-main .sidebar ul{
-	list-style-type: none;
-}
-
-main .sidebar ul li::before{
-	content: "\2192 ";
-	color: #00a896;
-}
-
-main article {
-	flex: 30em;
-}
-
-main h1 {
-	font-size: 2em;
-	margin-top: 1em;
 }
