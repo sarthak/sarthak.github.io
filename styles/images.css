@@ -24,3 +24,10 @@
 	display: block;
 	margin: 5px auto;
 }
+
+#unity-experiments-image {
+	width: 480px;
+	height: 400px;
+	display:block;
+	margin: 10px auto;
+}
