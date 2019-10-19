@@ -17,7 +17,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li class="current">Projects</li>
-					<li><a href="games.html">Games</a></li>
+					<!-- <li><a href="games.html">Games</a></li> -->
 					<!-- <li><a href="philo.html">Philosohpy</a></li> -->
 					<!-- <li><a href="goodreads.html">Good Reads</a></li> -->
 				</ul>
@@ -32,7 +32,7 @@
 					<p>A few (cool) experiments that I did in Unity like raycasting shadows, random terrain, etc.</p>
 					<div class="main-content">
 					<p>
-					Please see the GitHub repo for full details. <br>
+					Please see the GitHub repo (and documentation) for full details (as well as implementation). <br>
 					Some experiments - 
 					<ol>
 						<li><strong>Raycasting Shadows</strong> : Recreating vision effect as you might have seen in some
@@ -48,112 +48,90 @@
 					</a>
 					</div>
 				</section>
-				<section title="NavImage" id="NavImage" class="post">
-					<h2>NavImage - Replicate directory's naviagtion hierarchy</h2>
-					<p>Tool to create image of directory's navigation structure </p>
+				<section title="Firewall GOST" class="post">
+					<h2>Firewall GOST</h2>
+					<p>An educational game to teach firewall configuration and networking basics.</p>
 					<div class="main-content">
-					<p>
-					Creating an image of HDD is useful, but sometimes you don't want to bother with copying your entire HDD
-					but rather only preserve it's navigation structure. This tool allows you to do exactly that. <br><br>
-					It replicates the directory structure of a source directory in the same hierarchical manner as the source.
-					The only difference is that it does not copy files and their contents.
-					Instead it associates each directory with a index.html file containing information about it's files 
-					and also linking to relevant directories. <br><br>
-
-					<strong>TL;DR</strong> It replicates entire directory structure in folder only manner 
-					and associates each folder with it's index.html file containing list of files originally contained in directory.<br>
-					<br>
-
-					Info about usage and specifications on GitHub.
-					</p>
-
-					<img src="images/projects/navimage.PNG" alt="Example" id="navimage">
-					<a href="https://github.com/batman831/NavImage" class="link" target="_blank" alt="View NavImage on Github">
-						View this project on GitHub (Also download as .JAR)
-					</a>
+						<p>Developed as a part of Gamification of Security Training (GOST), IIT Delhi, Firewall
+						is a game which intends to teach the players basics of packet filtering firewall configurations
+						along with networking basics. The motive of game is to equip player with even no
+						background knowledge of networking with essentials of networking and need of firewall
+						and configuring simple firewalls.</p>
+						<p>This is a beta release of game, the game has developed a lot beyond this but is not yet made
+                        public for some reasons.</p>
+						<p>You can play the game right on your browser. Expected playtime is ~ 30 minutes</p>
+						<iframe src="https://itch.io/embed/452639" width="552" height="167" frameborder="0"></iframe>
 					</div>
 				</section>
-				<section title="SEncrypt" id="SEncrypt" class="post">
-					<h2>SEncrypt - The Text Encryptor</h2>
-					<p>Coded in C++, SEncrypt is a text 
-					<a href="https://en.wikipedia.org/wiki/Encryption" class="link" target="_blank">encryption</a>
-					program. It can be used to encrypt and decrypt text into ciphers to prevent their misuse.</p>
+				<section title="Brick Break" id="brickbreak" class="post">
+					<h2>Brick Break</h2>
+					<p>Brick Break is a <abbr title="spinoff is a videogame which is based on already existing videogame
+					but with improved/different features, etc.">spinoff</abbr> of classic DX-Ball game with improvised
+					graphics and features and a level builder built right into the game.</p>
 					<div class="main-content">
-						<p>SEncrypt encrypts text by creating a ASCII character bijective map whose mapping is random
-						and seeded by a <em>key</em> entered by user. The text message is then encrypted or decrypted
-						using this map.</p>
-						<p>The only <em>feasible</em> way to crack the encryption is to recreate the mapping, which because
-						of it's very randomness can only be obtained by obtaining the <em>key</em> of encryption.</p>
-						<p>Example -</p>
-						<div class="flexed">
-							<code>$ ./sencrypt.exe <br>
-								Enter a key : mykey <br>
-								Your msg : hello world <br>
-								Encrypted Output : kBcc&nC&Qc1 <br>
-								Decrypted Output : ?1]]{gQ{B]N <br>
-							</code>
-
-							<code>
-								$ ./sencrypt.exe <br>
-								Enter a key : mykey <br>
-								Your msg : kBcc&nC&Qc1 <br>
-								Encrypted Output : Wr77.Zt.w7e <br>
-								Decrypted Output : hello world <br>
-							</code>					
-						</div>
-						<p>The program can also be used to read/write encryptions/decryptions to a text file instead.</p>
-						<p>General syntax - </p>
-						<code>$ [e or d] [key] [inputfile] <[outputfile]></code>
-						<p>Example - </p>
-						<div class="flexed">
-							<code>$ ./sencrypt.exe e somekey input.txt out.txt</code>
-							<code>$ ./sencrypt.exe d somekey out.txt <br>
-								1 <br>
-								This is some message that is written in input.txt <br>
-							</code>
-						</div>
-						<a href="https://drive.google.com/file/d/17iKuu_tYL7en_uZfwYGdCDcWGbI0gUZ3/view?usp=sharing"
-						   alt="Download .zip from GDrive" class="link">Download .zip</a>
-					</div>
-				</section>
-				<section title="Rainfaill Simulator" id="rainsim" class="post">
-					<h2>Rainfall Physics Simulator</h2>
-					<p>This project attempts to simulate rainfall and physics of water-flow.</p>
-					<div class="main-content">
-						<p>Purpose of this project was to learn dynamic GUI updating in <strong>JavaFX</strong>
-						using concept of FPS and to get hands-on experience on a simple physics simulator,
-						both of which have been duly accomplished. Side objectives included learning event-handling,
-						logic for creation of smoothed landscapes (like those created in games like Minecraft)
-						and JavaFX Animations. <strong>All checked</strong>.</p>
-						<p>This project, strictly speaking,  is not a true physics simulator - </p>
-						<ul>
-							<li>There is no concept of <em>velocity</em>. Raindrops are coded such that they move,
-								if they can, <em>exactly</em> 1 pixel each frame.</li>
-							<li>There is gravity but there is <strong>no</strong> concept of acceleration due to gravity.
-								This is implicitly stated in previous statement.</li>
-							<li>There is <strong>no</strong> collision mechanics involved.
-								Raindrops magically stick to the surface on collision (e=0) but when the collide with land
-								laterally they sometimes do, and sometimes do not, bounce back elastically (e=1).</li>
-							<li>There is also no concept of <em>potential difference</em>. That is,
-								if you were to create 2 connected vessels and fill one of them with water,
-								the water would definitely flow to the other but it is not guaranteed that it would 
-								attain same level in both.</li>
-						</ul>
-						<p><a href="https://gfycat.com/enviousdishonestgemsbuck" class="link" target="_blank">
-							View a GIF of this simulator</a></p>
-						<a href="https://drive.google.com/open?id=1VKjSpmh-gtr9rRbALP6CBmbHyTPh5OsR"
-						   alt="Download .JAR from GDrive" class="link" target="_blank">Download .JAR</a>
-					</div>
-				</section>
-				<section title="SText Editor" id="SText" class="post">
-					<h2>SText Editor</h2>
-					<p>A simple text editor powered by Java(fx).</p>
-					<div class="main-content">
+						<p>The objective is to destroy all bricks in a level without letting the ball sink.
+						You get only 3 chances. There are also loads of powerup to help you with your task but there are
+						also some negative powerups among them.</p>
+						<p>The game currently features 11 pre-designed levels (more coming soon) but you have access to level builder
+						right in the game, so feel free to let your creativity and fun out.</p>
+						<p>Available on PC and Android</p>
 						<p>
-						Has the capability of a standard notepad
-						plus it can mask/unmask text data.</p>
-						<a href="https://drive.google.com/open?id=11MCWVU8BC9Kso0KAZjI4-Fr03YI1Hmuc"
-						   alt="Download .JAR from GDrive" class="link" target="_blank">Download. JAR</a>
+						<a href="https://play.google.com/store/apps/details?id=com.IITDGDC.BrickBreak" alt="Download Brick Break game Android" class="link">Download the game from Playstore (Android)</a>
+						</p>
+						<iframe src="https://itch.io/embed/452648" width="552" height="167" frameborder="0"></iframe>
+					</div>
+				</section>
+				<section title="Sounds ABM" class="post">
+					<h2>Sounds : A Blind Maze</h2>
+					<p>Echolocate to win and survive. Available on Play Store and PC.</p>
+					<div class="main-content">
+						<p>Created in Collaboration with my friend Shubham, Sounds ABM is my first android game.
+						It features an unique game mechanism, you percieve the surrounding with the help of echos!
+						After all, you are out exploring in a dark cave full of fearsome creatures with acute hearing 
+						bent on eliminating any foreign creature.</p>
+						<p>"Sounds: A Blind Maze" follows the player in a first-person perspective as you navigate 
+						through a maze-like cave. The features of the cave can only be made known to you through sounds,
+						which your extremely experienced ears can detect with such precision that the player
+						visualizes it as light itself.
+						<br>
+						Beware! If the sound you create reaches the wrong ears, you will find yourself running for your life.
+						</p>
+
+						<p>
+						Levels of increasing complexity are arranged to test your gaming skills as a shooter as well as navigator.
+						Get ready to have your nerves on edge with every step you take!.</p>
+						<p>Available on Play Store as beta release.</p>
+						<a href="https://dl.getdropbox.com/s/54gbditaxjerdmt/Sounds%20ABM%20v1.0beta.7z" alt="Download Sounds ABM game" class="link"> Download For PC Now </a>
+						<div class="flexed">
+							<img src="images/games/Sounds ABM-1.png" title="Sounds ABM screenshot">
+							<img src="images/games/Sounds ABM-2.png" title="Sounds ABM screenshot">
+							<img src="images/games/Sounds ABM-3.png" title="Sounds ABM screenshot">
+							<img src="images/games/Sounds ABM-4.png" title="Sounds ABM screenshot">
+							<img src="images/games/Sounds ABM-5.png" title="Sounds ABM screenshot">
+						</div>
+					</div>
+				</section>
+				<section title="Mineri" id="mineri" class="post">
+					<h2>Mineri</h2>
+					<p>This game has it's own webpage, view this game on <a href=
+					"https://forum.unity.com/threads/pc-2d-game-mineri-a-game-about-mining.323488/"
+												class="link" target="_blank">Unity Forums</a>
+					</p>
+					<div class="main-content">
+						<div class="flexed">
+							<img src="images/games/mineri-1.png" title="Mineri Screencap" id="mineri-game">
+							<img src="images/games/mineri-2.png" title="Mineri Screencap" id="mineri-game">
+							<img src="images/games/mineri-3.png" title="Mineri Screencap" id="mineri-game"> 
+						</div>
+					</div>
+				</section>
+				<section title="Disgons" id="disgons" class="post">
+					<h2>Disgons</h2>
+					<div class="main-content">
+						<p>This has its own webpage, view this game on <a href=
+						"https://forum.unity.com/threads/my-first-2d-game-disgons.304782/" class="link" target="_blank">
+							Unity Forums</a>.
+						</p>
 					</div>
 				</section>
 			</article>
