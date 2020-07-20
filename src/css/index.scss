@@ -51,21 +51,30 @@ main > section {
   margin-bottom: 5vh;
 }
 
+.outgoing {
+  color: #00b1ff;
+}
+.outgoing:hover {
+  background-color: #00b1ff;
+  color: white;
+}
+
 .about {
   display: flex;
   flex-flow: row-reverse wrap;
-  justify-content: space-around;
   align-items: center;
 }
 
 .about {
   > img {
-	max-width: 512px;
+	flex: 1 300px;
+	max-width: 100%;
 	filter: drop-shadow(0px 0px 2px #40b1dd);
   }
 
   .left-pane {
-	flex: 1.2 10em;
+	flex: 2 10em;
+	text-align: justify;
   }
 
   .social-buttons {
@@ -76,9 +85,9 @@ main > section {
   }
 
   .social-buttons .social-button {
-	height: 5vw;
-	width: 5vw;
-	max-width: 128px;
+	height: 10vw;
+	width: 10vw;
+	max-width: 64px;
 	display: block;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -102,6 +111,13 @@ main > section {
   .linkedin {
 	background-image: url("images/linkedin.svg");
   }
+}
+
+.sticky {
+  border-bottom: 1px solid rgba(237,246,250,1);
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 
 .eduwork {

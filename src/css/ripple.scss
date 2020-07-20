@@ -1,0 +1,21 @@
+.ripple {
+  position: relative;
+}
+
+.ripple_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ripple_div>div {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  transform-origin: center;
+  background-color: gray;
+  border-radius: 50%;
+}
