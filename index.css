@@ -337,18 +337,21 @@ template {
   display: none;
 }
 
+/* Font Families */
 html {
   font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: linear-gradient(to bottom, #edf6fa 0%, white 25%, white 75%, #daeffa 100%);
 }
 
 h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
+/* Background Theme */
+body {
+  background: linear-gradient(to bottom, #edf6fa 0%, white 25%, white 75%, #edf6fa 100%);
+}
+
+/* Header fancy */
 header h1 {
   text-align: center;
   font-family: "Dancing Script", cursive;
@@ -369,7 +372,13 @@ header nav a {
 }
 header nav a:hover {
   border: 1px solid black;
-  box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 4px gray;
+}
+
+/* Footer Fancy */
+footer {
+  border-top: 1px solid black;
+  font-size: 0.5em;
 }
 
 main {
@@ -382,18 +391,20 @@ main {
   }
 }
 
+/* Section spacing */
 main > section {
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
 
+/* Redirecting url styles */
 .outgoing {
-  color: #00b1ff;
+  color: #00719d;
 }
 
 .outgoing:hover {
-  background-color: #00b1ff;
-  color: white;
+  background-color: #00719d;
+  color: #edf6fa;
 }
 
 .about {
@@ -444,7 +455,7 @@ main > section {
 }
 
 .sticky {
-  border-bottom: 1px solid #edf6fa;
+  border-bottom: 1px dashed #00719d;
   background-color: white;
   position: sticky;
   top: 0;
@@ -503,6 +514,7 @@ main > section {
 .collapsable:hover {
   border: 1px solid black;
   border-radius: 20px;
+  box-shadow: 0px 0px 6px gray;
 }
 
 .thread {
@@ -510,12 +522,17 @@ main > section {
   overflow: hidden;
 }
 
-.thread button {
+.thread > button {
   display: block;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px gray;
+  border: 1px solid transparent;
+  height: 3em;
+  margin: 2px;
+}
+.thread > button:hover {
   border: 1px solid black;
-  border-radius: 10px;
-  height: 2em;
-  box-shadow: 0px 0px 2px;
 }
 
 /*# sourceMappingURL=index.css.map */
