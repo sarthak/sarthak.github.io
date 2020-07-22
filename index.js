@@ -1,10 +1,12 @@
 'use strict';
 
 function bindToggleCollapse(element) {
-  let header = element.querySelector('.header');
+  let body = element.querySelector('.body');
+  if (body == null)
+	return;
 
   let visible = false;
-  let collapsedHeight = (header.clientHeight) + "px";
+  let collapsedHeight = (element.scrollHeight - body.clientHeight) + "px";
   element.style.maxHeight = collapsedHeight;
 
   element.addEventListener('click', (e) => {
@@ -13,7 +15,7 @@ function bindToggleCollapse(element) {
 	  let fullHeight = element.scrollHeight + "px";
 	  element.style.maxHeight = fullHeight;
 	} else {
-	  let collapsedHeight = (header.scrollHeight) + "px";
+	  let collapsedHeight = (element.scrollHeight - body.clientHeight) + "px";
 	  element.style.maxHeight = collapsedHeight;
 	}
   });
