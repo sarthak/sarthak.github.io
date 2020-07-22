@@ -102,6 +102,9 @@
   transition:  max-height 1s;
   overflow: hidden;
 }
+.collapsable:hover {
+  cursor: pointer;
+}
 .collapsable {
   > img {
 	flex: 0 auto;
@@ -127,6 +130,7 @@
   }
   .body {
 	width: 100%;
+	transition: opacity 1s;
   }
 }
 .collapsable:hover {
@@ -134,11 +138,10 @@
 }
 
 .thread {
-  transition: max-height 1s;
-  overflow: hidden;
-}
-
-.thread {
+  .posts {
+	transition: max-height 1s;
+	overflow: hidden;
+  }
   > button {
 	display: block;
 	background-color: white;

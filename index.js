@@ -8,15 +8,18 @@ function bindToggleCollapse(element) {
   let visible = false;
   let collapsedHeight = (element.scrollHeight - body.clientHeight) + "px";
   element.style.maxHeight = collapsedHeight;
+  body.style.opacity = '0';
 
   element.addEventListener('click', (e) => {
 	visible = !visible;
 	if (visible) {
 	  let fullHeight = element.scrollHeight + "px";
 	  element.style.maxHeight = fullHeight;
+	  body.style.opacity = '1';
 	} else {
 	  let collapsedHeight = (element.scrollHeight - body.clientHeight) + "px";
 	  element.style.maxHeight = collapsedHeight;
+	  body.style.opacity = '0';
 	}
   });
 }
@@ -33,26 +36,30 @@ function bindCollapsables(element) {
   });
 }
 
-function bindSeeMore(element, button, template) {
+function bindSeeMore(element, button) {
   let count = 1;
+  if (element.hasAttribute('data-start'))
+	count = element.getAttribute('data-start');
+
+  let i = 0;
   let handler = (e) => {
 	element.style.maxHeight = element.scrollHeight + "px";
-	for (let i=0; i<count; i++) {
-	  if (template.children.length === 0) {
+	for (let c=0; c<count; c++) {
+	  if (i == element.children.length) {
 		button.style.display = 'none';
 		break;
 	  }
-	  let element = template.children[0];
-	  button.insertAdjacentElement('beforebegin', element);
-	  bindCollapsables(element);
+	  let post = element.children[i++];
+	  post.style.display = '';
+	  bindCollapsables(post);
 	}
-	if (template.children.length === 0) {
+	if (i == element.children.length) {
 	  button.style.display = 'none';
 	}
 	count *= 2;
 	element.style.maxHeight = element.scrollHeight + "px";
 
-	button.innerHTML = `Show ${template.children.length} More`;
+	button.innerHTML = `Show ${element.children.length-i} More`;
   };
 
   button.addEventListener('click', handler);
@@ -67,11 +74,13 @@ function bindSeeMore(element, button, template) {
 function bindThreads(element) {
   const threads = element.querySelectorAll('.thread');
   threads.forEach((e) => {
-	let template = e.querySelector('template').innerHTML;
-	let holder = document.createElement('div');
-	holder.innerHTML = template;
+	let posts = e.querySelector('.posts');
+	let children = posts.children;
+	for (let i=0; i<children.length; i++) {
+	  children[i].style.display = 'none';
+	}
 	let button = e.querySelector('button'); 
-	bindSeeMore(e, button, holder);
+	bindSeeMore(posts, button);
   });
 }
 

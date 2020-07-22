@@ -6,15 +6,18 @@ function bindToggleCollapse(element) {
   let visible = false;
   let collapsedHeight = (element.scrollHeight - body.clientHeight) + "px";
   element.style.maxHeight = collapsedHeight;
+  body.style.opacity = '0';
 
   element.addEventListener('click', (e) => {
 	visible = !visible;
 	if (visible) {
 	  let fullHeight = element.scrollHeight + "px";
 	  element.style.maxHeight = fullHeight;
+	  body.style.opacity = '1';
 	} else {
 	  let collapsedHeight = (element.scrollHeight - body.clientHeight) + "px";
 	  element.style.maxHeight = collapsedHeight;
+	  body.style.opacity = '0';
 	}
   });
 }

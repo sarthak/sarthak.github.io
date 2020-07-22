@@ -500,6 +500,10 @@ main > section {
   overflow: hidden;
 }
 
+.collapsable:hover {
+  cursor: pointer;
+}
+
 .collapsable > img {
   flex: 0 auto;
   width: 64px;
@@ -522,17 +526,17 @@ main > section {
 }
 .collapsable .body {
   width: 100%;
+  transition: opacity 1s;
 }
 
 .collapsable:hover {
   border: 1px solid black;
 }
 
-.thread {
+.thread .posts {
   transition: max-height 1s;
   overflow: hidden;
 }
-
 .thread > button {
   display: block;
   background-color: white;
